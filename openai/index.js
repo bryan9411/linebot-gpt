@@ -27,8 +27,8 @@ const createImageCompletion = async (question) => {
 	})
 
 	console.log('文字生成圖片%:', response.data.data)
-	const image_url = response.data.data[0].url
+	const imageUrl = response.data.data[0].url
 
-	return image_url
+	return imageUrl
 }
 module.exports = { createChatCompletion, createImageCompletion }
