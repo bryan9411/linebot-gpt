@@ -1,5 +1,5 @@
 const { client } = require('../line')
-const createChatCompletion = require('../openai')
+const { createChatCompletion } = require('../openai')
 
 const handleEvents = async (event) => {
 	if (event.type !== 'message' || event.message.type !== 'text') {
